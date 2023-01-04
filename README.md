@@ -17,9 +17,10 @@ pnpm add @reduxjs/toolkit react-redux axios
 pnpm add -D @types/react-redux
 ```
 > Configuração
-```js 
-//   src/store/store-config.ts
 
+**src/store/store-config.ts**
+
+```js 
 import { Action, configureStore, ThunkAction } from '@reduxjs/toolkit'
 import { useSelector } from 'react-redux'
 import { TypedUseSelectorHook, useDispatch } from 'react-redux'
