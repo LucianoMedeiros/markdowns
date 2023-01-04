@@ -21,6 +21,7 @@ pnpm add -D @types/react-redux
 **src/store/store-config.ts**
 
 ```js 
+
 import { Action, configureStore, ThunkAction } from '@reduxjs/toolkit'
 import { useSelector } from 'react-redux'
 import { TypedUseSelectorHook, useDispatch } from 'react-redux'
@@ -42,9 +43,9 @@ export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector
 
 export default store
 ```
-```js 
-//   src/store/user/user-reducer.ts
 
+**src/store/user/user-reducer.ts**
+```js 
 import { createSlice } from '@reduxjs/toolkit'
 import { userInitialState } from './user-initialstate'
 
@@ -62,8 +63,9 @@ export const UserActions = slice.actions
 
 export const userReducer = slice.reducer
 ```
+
+**src/store/user/user-initialstate.ts**
 ```js 
-//   src/store/user/user-initialstate.ts
 export const userInitialState = {
   isPending: false,
   all: [],
